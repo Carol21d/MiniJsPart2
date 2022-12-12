@@ -1,6 +1,6 @@
 import { FizzBuzz, fizzbuzz2 } from "../src/scripts/FizzBuzz";
 
-describe('FizzBuzz', () => {
+describe.skip('FizzBuzz', () => {
     test('should return Buzz if is a divisible by 5', () => {
 
         //Given
@@ -18,7 +18,7 @@ describe('FizzBuzz', () => {
 
 
 
-describe('FizzBuzz', () => {
+describe.skip('FizzBuzz', () => {
     test('should return FizzBuzz if is a divisible by 5 and by 3', () => {
 
         //Given
