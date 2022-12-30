@@ -16,7 +16,7 @@ checkAge(age);
 
 function checkAge(age) {
   if (age > 18) {
-    console.log("Yes,IMaria  can drive");
+    console.log("Yes,I can drive");
   } else {
     console.log("I can't drive cause i'm under 18");
   }
