@@ -3,14 +3,15 @@ class Person {
     this.name = name;
     this.age = age;
 }
-    sayName(){
-        console.log(`this is my name ${this.name} `);
-    }
-
-    sayAge(){
-        console.log(`My age is ${this.age}`);
+    
+    dataPerson(){
+        console.log(`My name is ${this.name} and I'm ${this.age}`);
     }
  
 }
-const person = new Person("Maria", "29");
-person.sayAge();
+
+const name = prompt('Enter your name');
+const age = prompt('Enter your age');
+const person = new Person(name, age);
+person.dataPerson();
+
