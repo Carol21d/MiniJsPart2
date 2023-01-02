@@ -12,7 +12,9 @@ let result = 0;
 let letter = "";
 let question;
 
+
 do {
+  
   function calculateLetter() {
     let personDni = document.getElementById("number-dni").value;
     if (Number(personDni) == personDni) {
@@ -46,12 +48,24 @@ do {
         ];
         letter = letter[result];
       }
-
       document.getElementById("salida").innerHTML = `the number of Dni is : ${personDni}  and Its letter is ${letter}`;
-      
-      
     }
-  }
-} while (question === "y");
+   }
+   
+} while (personDni === "y");
+   
+     
+  
+   
+
+
+
+
+
+// question = prompt("do u want y /n");
+
+
+
+
 
 
