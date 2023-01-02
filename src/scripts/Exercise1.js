@@ -14,7 +14,7 @@ const person = new Person(name, age);
 person.dataPerson();
 checkAge(age);
 
-function checkAge(age) {
+export function checkAge(age) {
   if (age > 18) {
     console.log("Yes,I can drive");
   } else {
