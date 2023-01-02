@@ -18,19 +18,19 @@
 
 let result = 0;
 let letter = "";
-let question;
+let question = true;
 
 
-do {
-    try {
-        calculateLetter();
-    } catch (error) {
-        alert("eroore")
-    }
+// do {
+//     try {
+//         calculateLetter();
+//     } catch (error) {
+//         alert("eroore")
+//     }
   
   
-    question = prompt("do u want y /n");
-} while (question ==="y");
+//     question = prompt("do u want y /n");
+// } while (!question);
 
 
 function calculateLetter() {
@@ -67,6 +67,10 @@ function calculateLetter() {
         letter = letter[result];
       }
       document.getElementById("salida").innerHTML = `the number of Dni is : ${personDni}  and Its letter is ${letter}`;
+    }
+    if (personDni < 0 || personDni > 99999999) {
+        alert("Enter an DNI that is between 0 and 8 digits");
+        
     }
    }
    
